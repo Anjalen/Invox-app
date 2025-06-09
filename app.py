@@ -26,7 +26,8 @@ Recommendations:
 """
 
 # Set your OpenAI API key here
-openai.api_key = "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"  # Replace with your actual API key
+import os
+openai.api_key = os.getenv("OPENAI_API_KEY")
 
 # Streamlit UI
 st.set_page_config(page_title="Invox - Scam Analyzer", layout="centered")
